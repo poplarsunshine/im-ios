@@ -23,7 +23,7 @@
 #define HOST @"115.28.212.79"
 #define PORT 6379
 
-#define DurSecond 30.0
+#define DurSecond 10.0
 
 @implementation SquareMessage
 

@@ -92,12 +92,12 @@
     AccountData *friend = [[DBHelper sharedInstance] getAccountByPhone:data.phoneToOrFrom];
     int unReadNum = 0;
     if ([data.gid length] > 0) {
-        NSLog(@"群组");
+        //NSLog(@"群组");
         unReadNum = [[DBHelper sharedInstance] getSumUnReadByGid:data.gid];
     }
     else
     {
-        NSLog(@"单聊");
+        //NSLog(@"单聊");
         unReadNum = [[DBHelper sharedInstance] getSumUnReadCurPhone:data.phone
                                          andFriendPhone:data.phoneToOrFrom];
 
